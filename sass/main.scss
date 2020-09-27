@@ -1,0 +1,242 @@
+@import "_font.scss";
+@import "_placeholders.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  font-size: $sizeTitle;
+  font-family: $fontTitle;
+  color: black;
+}
+h2 {
+  font-family: $fontSubtitle;
+  font-size: $sizeSubtitle;
+  color: black;
+}
+h3 {
+  font-family: $fontText;
+  font-size: $sizeText;
+  color: white;
+}
+
+p,
+.parrafolist {
+  font-family: $fontText;
+  font-weight: 400;
+  font-size: $sizeText;
+  line-height: 1.5;
+  color: black;
+}
+
+.navbar {
+  background-color: black;
+  height: 20px;
+  font-family: $fontSubtitle;
+  font-weight: 200;
+  display: flex;
+  padding: 25px 15px;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  .navbar__home img {
+    width: 25px;
+    padding: 10px 0;
+  }
+  .navbar__menu {
+    display: flex;
+    a {
+      padding-left: 10px;
+      display: inline-block;
+    }
+    li {
+      display: inline-block;
+    }
+  }
+}
+.background--raport {
+  background-image: url("../imagenes/fondo2.jpg");
+  background-size: cover;
+}
+.home {
+  max-width: 1140px;
+  margin: auto;
+  .home__logo {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    .home__logocentral {
+      background-color: rgba(255, 255, 255, 0.6);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      margin: auto;
+    }
+  }
+}
+
+.home__btn {
+  @extend %btn;
+}
+
+.home__btn--small {
+  @extend %btn;
+  margin-top: 40px;
+  display: inline-block;
+  width: 100px;
+}
+
+.card {
+  display: flex;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: auto;
+  box-shadow: 8px 10px 8px -5px #00000080;
+  margin-bottom: 40px;
+  &--reverse {
+    flex-direction: row-reverse;
+  }
+
+  &__img {
+    padding: 10px;
+    border: 2px solid black;
+    width: 30%;
+    transition: width 2s;
+    &:hover {
+      width: 40%;
+    }
+  }
+  &__content {
+    padding-right: 30px;
+    &--right {
+      text-align: right;
+      padding: 0 10px 0 30px;
+    }
+    .card__title {
+      padding-bottom: 40px;
+    }
+    .card__text {
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+.aboutus {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.85);
+  width: 80%;
+  margin: 70px auto;
+  padding: 30px;
+  .aboutus__team {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    width: 30%;
+    transition: width 1s;
+    box-shadow: inset 0px 0px 8px #00000080;
+    &:hover {
+      width: 40%;
+    }
+    img {
+      width: 90%;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+.frase {
+  font-size: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 5px 10px 6px -6px #00000080;
+  width: 70%;
+  margin: 0 auto 50px;
+  padding: 30px;
+}
+
+footer {
+  background-color: #161413;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 50px;
+  font-family: "Montserrat", sans-serif;
+  .footer__redes {
+    display: flex;
+    align-items: center;
+    ul {
+      display: flex;
+      margin-left: 30px;
+      img {
+        width: 30px;
+        margin-right: 20px;
+      }
+    }
+  }
+  .footer__contacto {
+    text-align: right;
+    padding: 0 0 0 100px;
+    color: white;
+  }
+}
+
+// CULTURA
+
+.fondoclaro--lineal {
+  background-image: url(../imagenes/fondoclaro.jpg);
+  background-size: cover;
+}
+
+#cultura {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.title1 {
+  padding: 70px 0;
+  text-align: center;
+}
+
+// materiales
+
+.fondooscuro--lineal {
+  background-image: url(../imagenes/fondooscuro.jpg);
+  background-size: cover;
+}
+
+.title1--dark {
+  color: white;
+}
+.card {
+  &--dark {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+.card__img--dark {
+  border: 2px solid white;
+  width: 30%;
+}
+.card__title--dark,
+.card__text--dark {
+  color: white;
+}

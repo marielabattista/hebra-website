@@ -1,0 +1,11 @@
+@mixin flex {
+  background-color: black;
+  border-radius: 20px;
+  border: 1px solid black;
+  display: block;
+  width: 60%;
+  color: white;
+  font-size: $sizeTextBtn;
+  padding: 8px 0;
+  font-family: $fontTextBtn;
+}
