@@ -1,11 +1,31 @@
-@mixin flex {
-  background-color: black;
-  border-radius: 20px;
-  border: 1px solid black;
-  display: block;
-  width: 60%;
-  color: white;
-  font-size: $sizeTextBtn;
-  padding: 8px 0;
-  font-family: $fontTextBtn;
+@mixin flex(
+  $justify-content: flex-start,
+  $align-items: flex-start,
+  $direction: row
+) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin fontStyle($type) {
+  font-family: "Montserrat", sans-serif;
+
+  @if $type == title {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 80px;
+  } @else if $type == subtitle {
+    font-size: 30px;
+    font-weight: 300;
+  } @else if $type == text {
+    font-size: 20px;
+    font-weight: 200;
+  } @else if $type == btn {
+    font-size: 15px;
+  } @else if $type == secondtext {
+    font-size: 12px;
+  } @else {
+    @error "Unknown font type #{$type}.";
+  }
 }

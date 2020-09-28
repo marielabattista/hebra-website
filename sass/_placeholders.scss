@@ -1,11 +1,20 @@
+@import "_mixins.scss";
+
 %btn {
+  @include fontStyle(btn);
   background-color: black;
   border-radius: 20px;
   border: 1px solid black;
   display: block;
-  width: 60%;
   color: white;
-  font-size: $sizeTextBtn;
-  padding: 8px 0;
-  font-family: $fontTextBtn;
+  padding: 10px 40px;
+}
+
+%input {
+  @include fontStyle(text);
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  margin: 10px 0;
+  padding: 2px 0 2px 5px;
 }

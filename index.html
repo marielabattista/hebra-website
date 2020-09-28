@@ -80,11 +80,6 @@
             debitis. Explicabo amet quis nihil placeat reiciendis nobis
             voluptatum alias excepturi, eligendi voluptatem inventore doloribus
             veritatis repudiandae soluta culpa. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Et recusandae nostrum debitis.
-            Explicabo amet quis nihil placeat reiciendis nobis voluptatum alias
-            excepturi, eligendi voluptatem inventore doloribus veritatis
-            repudiandae soluta culpa. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Et recusandae nostrum debitis.
           </p>
           <button class="home__btn--small">
             <a href="cultura.html">ver más</a>
@@ -110,10 +105,6 @@
             debitis. Explicabo amet quis nihil placeat reiciendis nobis
             voluptatum alias excepturi, eligendi voluptatem inventore doloribus
             veritatis repudiandae soluta culpa. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Et recusandae nostrum debitis.
-            Explicabo amet quis nihil placeat reiciendis nobis voluptatum alias
-            excepturi, eligendi voluptatem inventore doloribus veritatis
-            repudiandae soluta culpa.
           </p>
           <button class="home__btn--small">
             <a href="materiales.html">ver más</a>
@@ -146,8 +137,29 @@
       </section>
     </main>
     <footer>
-      <section class="footer__redes">
-        <ul>
+      <form class="form" action="#">
+        <p>Queremos conocerte</p>
+        <input type="text" name="nombre" placeholder="Nombre" />
+        <input type="text" name="email" placeholder="Email" />
+        <textarea
+          name="comentario"
+          id="comentario"
+          rows="7"
+          placeholder="Dejanos tu comentario"
+        ></textarea>
+        <div class="checkbox">
+          <input type="checkbox" name="recibirinformacion" value="si" checked />
+          <label for="recibirinformacion">quiero recibir informacion</label>
+        </div>
+        <input type="submit" value="Enviar" />
+      </form>
+      <section class="footer__contacto">
+        <img src="./imagenes/mapa.jpg" alt="ubicacion" />
+        <h3>CONTACTO</h3>
+        <h3>Av. Callao 1100</h3>
+        <h3>(011)33678978</h3>
+        <h3>somoshebra@gmail.com</h3>
+        <ul class="footer__contacto--redes">
           <li>
             <a href="https://www.facebook.com">
               <img src="./imagenes/facebook.svg" alt="facebook" />
@@ -157,12 +169,6 @@
             <img src="./imagenes/instagram.svg" alt="instagram" />
           </a>
         </ul>
-      </section>
-      <section class="footer__contacto">
-        <h3>CONTACTO</h3>
-        <h3>Av. Callao 1100</h3>
-        <h3>(011)33678978</h3>
-        <h3>somoshebra@gmail.com</h3>
       </section>
     </footer>
     <script src="js/wow.min.js"></script>
