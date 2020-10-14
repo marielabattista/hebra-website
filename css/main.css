@@ -1,18 +1,7 @@
-footer .form input[type=submit], .home__btn--small, .home__btn {
-  font-family: "Montserrat", sans-serif;
-  font-size: 15px;
-  background-color: black;
-  border-radius: 20px;
-  border: 1px solid black;
-  display: block;
-  color: white;
-  padding: 10px 40px;
-}
-
 footer .form input[type=text] {
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  font-weight: 200;
+  font-size: 18px;
+  font-weight: 300;
   border: 1px solid white;
   background-color: black;
   color: white;
@@ -32,8 +21,8 @@ li {
 
 a {
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  font-weight: 200;
+  font-size: 18px;
+  font-weight: 300;
   text-decoration: none;
   color: white;
 }
@@ -55,14 +44,15 @@ h2 {
 h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
+  font-weight: 200;
   color: white;
 }
 
 p,
 .parrafolist {
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  font-weight: 200;
+  font-size: 18px;
+  font-weight: 300;
   line-height: 1.5;
   color: black;
 }
@@ -121,6 +111,17 @@ p,
   margin: auto;
 }
 
+.home__btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  background-color: black;
+  border-radius: 20px;
+  border: 1px solid black;
+  display: block;
+  color: white;
+  padding: 10px 40px;
+}
+
 .home__btn--small {
   margin-top: 40px;
   display: inline-block;
@@ -141,10 +142,10 @@ p,
   padding: 10px;
   border: 2px solid black;
   width: 30%;
-  transition: width 2s;
+  transition: width 1s;
 }
 .card__img:hover {
-  width: 40%;
+  width: 35%;
 }
 .card__content {
   padding-right: 30px;
@@ -165,8 +166,8 @@ p,
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: flex-start;
-  background-color: rgba(255, 255, 255, 0.85);
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
   width: 100%;
   height: 100%;
   margin: 70px auto;
@@ -185,9 +186,6 @@ p,
   transition: width 1s;
   box-shadow: inset 0px 0px 8px #00000080;
 }
-.aboutus .aboutus__team:hover {
-  width: 40%;
-}
 .aboutus .aboutus__team img {
   width: 90%;
   padding-bottom: 10px;
@@ -195,10 +193,10 @@ p,
 
 .frase {
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  font-weight: 200;
+  font-size: 18px;
+  font-weight: 300;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.95);
   box-shadow: 5px 10px 6px -6px #00000080;
   width: 70%;
   margin: 0 auto 50px;
@@ -211,18 +209,18 @@ footer {
   justify-content: space-between;
   align-items: center;
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  font-weight: 200;
+  font-size: 18px;
+  font-weight: 300;
   background-color: #161413;
   color: white;
-  padding: 30px 50px;
+  padding: 40px 30px;
 }
 footer .form {
   width: 40%;
 }
 footer .form p {
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 footer .form input[type=text] {
   display: flex;
@@ -247,11 +245,12 @@ footer .form input[type=submit] {
   display: inline-block;
   border: 1px solid white;
   margin-top: 10px;
+  align-items: flex-end;
 }
 footer .form textarea {
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  font-weight: 200;
+  font-size: 18px;
+  font-weight: 300;
   background-color: #161413;
   color: white;
   border: 1px solid white;
@@ -260,11 +259,13 @@ footer .form textarea {
 }
 footer .footer__contacto {
   text-align: right;
-  padding: 0 0 0 100px;
   color: white;
 }
 footer .footer__contacto img {
-  width: 60%;
+  width: 50%;
+}
+footer .footer__contacto h3 {
+  padding-top: 7px;
 }
 footer .footer__contacto--redes {
   display: flex;
@@ -272,7 +273,6 @@ footer .footer__contacto--redes {
   justify-content: flex-end;
   align-items: flex-start;
   margin-top: 15px;
-  font-size: 12px;
 }
 footer .footer__contacto--redes img {
   width: 30px;
@@ -280,7 +280,7 @@ footer .footer__contacto--redes img {
 }
 
 .fondoclaro--lineal {
-  background-image: url(../imagenes/fondoclaro.jpg);
+  background-image: url(../imagenes/fondoclarolineal.jpg);
   background-size: cover;
 }
 
@@ -297,6 +297,11 @@ footer .footer__contacto--redes img {
 .fondooscuro--lineal {
   background-image: url(../imagenes/fondooscuro.jpg);
   background-size: cover;
+}
+
+#materiales {
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 .title1--dark {
@@ -322,12 +327,17 @@ footer .footer__contacto--redes img {
   background-size: cover;
 }
 
+#equipo {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
 .card__members {
   background-color: rgba(255, 255, 255, 0.9);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: stretch;
   width: 90%;
   padding: 30px;
   margin: 50px auto;
@@ -337,7 +347,7 @@ footer .footer__contacto--redes img {
 .card__member {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
   margin: 10px;
@@ -345,6 +355,7 @@ footer .footer__contacto--redes img {
   border: 2px solid black;
   transition: width 1s;
   box-shadow: inset 0px 0px 8px #00000080;
+  width: 100%;
 }
 .card__member img {
   width: 80%;
@@ -355,4 +366,55 @@ footer .footer__contacto--redes img {
 .card__member p {
   margin: 10px 0 30px;
   color: black;
+}
+
+.fondooscuro--acuarela {
+  background-image: url("../imagenes/fondo2.jpg");
+  background-size: cover;
+}
+
+#noticias {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.news {
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 85%;
+  padding: 30px;
+  margin: 50px auto;
+  box-shadow: 8px 10px 8px -5px #00000080;
+}
+
+.card__news--small {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 30%;
+  text-align: center;
+  margin: 10px 5px;
+  padding: 10px;
+  border: 2px solid black;
+  transition: width 1s;
+  box-shadow: inset 0px 0px 8px #00000080;
+}
+.card__news--small img {
+  width: 100%;
+}
+.card__news--small p {
+  text-align: start;
+  margin: 10px 0 10px;
+  color: black;
+}
+.card__news--small h1,
+.card__news--small button {
+  font-size: 25px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }

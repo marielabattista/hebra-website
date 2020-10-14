@@ -19,12 +19,13 @@
     font-size: 30px;
     font-weight: 300;
   } @else if $type == text {
-    font-size: 20px;
-    font-weight: 200;
+    font-size: 18px;
+    font-weight: 300;
   } @else if $type == btn {
     font-size: 15px;
   } @else if $type == secondtext {
     font-size: 12px;
+    font-weight: 200;
   } @else {
     @error "Unknown font type #{$type}.";
   }

@@ -1,15 +1,5 @@
 @import "_mixins.scss";
 
-%btn {
-  @include fontStyle(btn);
-  background-color: black;
-  border-radius: 20px;
-  border: 1px solid black;
-  display: block;
-  color: white;
-  padding: 10px 40px;
-}
-
 %input {
   @include fontStyle(text);
   border: 1px solid white;

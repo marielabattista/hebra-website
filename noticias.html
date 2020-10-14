@@ -1,84 +1,187 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Noticias</title>
-        <link rel="stylesheet" href="CSS/estilos.css">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap" rel="stylesheet">
-    </head>
-    
-    <body>
-        <header>
-            <a href="index.html" class="home">
-                <img src="./imagenes/logo entero.svg" alt="logo">
-            </a>
-            <nav class="navigation-bar"> 
-                <ul class="menu">
-                    <li>
-                        <a href="cultura.html">Cultura</a>
-                    </li>
-                    <li>
-                        <a href="materiales.html">Materiales</a>
-                    </li>
-                    <li>
-                        <a href="equipo.html">Equipo</a>
-                    </li>
-                    <li>
-                        <a href="noticias.html">Noticias</a>
-                    </li>
-                    <li>
-                        <a href="#contacto">Contacto</a>
-                    </li>
-                </ul>    
-            </nav> 
-            <ul class="social-media"> 
-                <li>
-                    <a href="https://www.facebook.com">
-                    <img src="./imagenes/facebook.svg" alt="facebook">
-                </a>
-                </li>
-                <a href="https://www.instagram.com">
-                    <img src="./imagenes/instagram-sketched.svg" alt="instagram">
-                </a>
-            </ul>
-        </header>
-    <main>
-      <h1>NOTICIAS</h1> 
-      <section>
-        <a href="noticia1.html"><h2>noticia1</h2>
-        <q>Lorem ipsum dolor sit amet consectetur adipisicing</q>
-        <img src="./imagenes/Noticia-contaminación-agua-consecuencias-soluciones.jpg" alt="noticia1">
-        </a>
-      </section>   
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Un sitio que promuebe la buena practica del rubro textil, genera conciencia hacia el cuidado del cuerpo y del planeta tierra"
+    />
+    <meta
+      name="keyword"
+      content="algodon, agroecologico, biodinamico, hilado, conciencia, buena práctica "
+    />
+    <meta name="author" content="Mariela Battista" />
+    <title>Hebra/Algodón orgánico</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Open+Sans+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="fondooscuro--acuarela">
+    <header class="navbar">
+      <a href="index.html" class="navbar__home">
+        <img src="./imagenes/logo entero.svg" alt="logo" />
+      </a>
+      <nav class="navbar__menu">
+        <ul class="navbar__menuitem">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="cultura.html">Cultura</a>
+          </li>
+          <li>
+            <a href="materiales.html">Materiales</a>
+          </li>
+          <li>
+            <a href="equipo.html">Equipo</a>
+          </li>
+          <li>
+            <a href="noticias.html">Noticias</a>
+          </li>
+          <li>
+            <a href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="noticias">
+      <section class="news">
+        <section class="card">
+          <img src="./imagenes/osos" alt="osos" class="card__img card__news" />
+          <div
+            class="wow animate__animated animate__fadeInRight card__content card__content--right"
+          >
+            <h2 class="card__title">
+              Un acuerdo mundial para proteger la biodiversidad y evitar otra
+              pandemia, el llamado de los líderes en histórica cumbre
+            </h2>
+            <p class="card__text">
+              Jefes de Estado y de Gobierno de todo el mundo, entre ellos varios
+              latinoamericanos, así como líderes de las Naciones Unidas
+              expresaron en una cumbre de la Asamblea General su compromiso para
+              acordar en 2021 un nuevo marco de protección de la biodiversidad.
+              Más de un millón de especies animales y vegetales están amenazadas
+              en el mundo y la pandemia de COVID-19 ha recalcado aún más la
+              “relación disfuncional” de los humanos con la naturaleza.
+            </p>
+            <button class="home__btn home__btn--small">
+              <a href="https://news.un.org/es/story/2020/09/1481582"
+                >leer más</a
+              >
+            </button>
+          </div>
+        </section>
+        <div class="card__news--small">
+          <a href="https://news.un.org/es/story/2020/09/1480752">
+            <img src="./imagenes/malala" alt="Malala Yousafzai" />
+            <p>
+              "Cumplir los Objetivos de Desarrollo Sostenible nos conducirá a
+              una era sostenible, sana y equitativa"
+            </p>
+            <h1>Leer mas</h1>
+          </a>
+        </div>
+        <div class="card__news--small">
+          <a href="https://news.un.org/es/story/2020/09/1481582">
+            <img src="./imagenes/biodiversidad.jpg" alt="biodiversidad" />
+            <p>
+              "Un acuerdo mundial para proteger la biodiversidad y evitar otra
+              pandemia, el llamado de los líderes en histórica cumbre"
+            </p>
+          </a>
+        </div>
+        <div class="card__news--small">
+          <a href="https://news.un.org/es/story/2020/09/1481372">
+            <img src="./imagenes/extincion.jpg" alt="extincion" />
+            <p>
+              "A 10 años del acuerdo mundial para proteger la biodiversidad, las
+              tasas de extinción son las más altas de la historia"
+            </p>
+          </a>
+        </div>
+        <div class="card__news--small">
+          <a href="https://news.un.org/es/story/2020/08/1479632">
+            <img src="./imagenes/india.jpg" alt="india" />
+            <p>
+              "Guterres: India puede convertirse en una “superpotencia mundial”
+              contra el cambio climático"
+            </p>
+          </a>
+        </div>
+        <div class="card__news--small">
+          <a href="https://news.un.org/es/story/2020/06/1475932">
+            <img src="./imagenes/indigenas.jpg" alt="india" />
+            <p>
+              "Cuatro líderes indígenas son asesinados al mes en América Latina
+              por defender sus derechos"
+            </p>
+          </a>
+        </div>
+        <div class="card__news--small">
+          <a href="https://news.un.org/es/story/2020/06/1475932">
+            <img src="./imagenes/lideres.jpg" alt="india" />
+            <p>
+              "Cuatro líderes indígenas son asesinados al mes en América Latina
+              por defender sus derechos"
+            </p>
+          </a>
+        </div>
+      </section>
     </main>
     <footer id="contacto">
-    </section>
-    <ul>
-        <li>
-            <a href="#">facebook</a>
-        </li>
-        <li>
-            <a href="#">Instagram</a>
-        </li>
-        <li>
-            <a href="#">mail</a>
-        </li>
-    </ul>
-    <section>
-        <section>
-            <h3>direccion</h3>
-            <h3>telefono</h3>
-        </section>
-        <section>
-            <h3>comentarios</h3>
-            <img src="./imagenes/estrella.png" alt="icono" width="10px">
-            <img src="./imagenes/estrella.png" alt="icono" width="10px">
-            <img src="./imagenes/estrella.png" alt="icono" width="10px">
-            <img src="./imagenes/estrella.png" alt="icono" width="10px">
-            <img src="./imagenes/estrella.png" alt="icono" width="10px">
-        </section>
+      <form class="form" action="#">
+        <p>Queremos conocerte</p>
+        <input type="text" name="nombre" placeholder="Nombre" />
+        <input type="text" name="email" placeholder="Email" />
+        <textarea
+          name="comentario"
+          id="comentario"
+          rows="7"
+          placeholder="Dejanos tu comentario"
+        ></textarea>
+        <div class="checkbox">
+          <input type="checkbox" name="recibirinformacion" value="si" checked />
+          <label for="recibirinformacion">quiero recibir informacion</label>
+        </div>
+        <input class="home__btn" type="submit" value="Enviar" />
+      </form>
+      <section class="footer__contacto">
+        <a href="https://www.google.com.ar/maps/@-34.607606,-58.4518608,15z"
+          ><img src="./imagenes/mapa.jpg" alt="ubicacion"
+        /></a>
+        <h3>CONTACTO</h3>
+        <h3>Av. Callao 1100</h3>
+        <h3>(011)33678978</h3>
+        <h3>somoshebra@gmail.com</h3>
+        <ul class="footer__contacto--redes">
+          <li>
+            <a href="https://www.facebook.com">
+              <img src="./imagenes/facebook.svg" alt="facebook" />
+            </a>
+          </li>
+          <a href="https://www.instagram.com">
+            <img src="./imagenes/instagram.svg" alt="instagram" />
+          </a>
+        </ul>
+      </section>
     </footer>
-</body>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
 </html>
