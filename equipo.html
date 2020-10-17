@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Un sitio que promuebe la buena practica del rubro textil, genera conciencia hacia el cuidado del cuerpo y del planeta tierra"
+      content="Un sitio que promueve la buena practica del rubro textil, genera conciencia hacia el cuidado del cuerpo y del planeta tierra"
     />
     <meta
       name="keyword"
@@ -17,13 +17,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+
     <link rel="stylesheet" href="css/main.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Open+Sans+Condensed:wght@300&display=swap"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;800&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -59,15 +60,15 @@
     <main id="equipo">
       <h1 class="title1">EQUIPO</h1>
       <section>
-        <p class="frase">
-          Sabemos que lograr y mantener el éxito en las organizaciones requiere
+        <q class="frase">
+          "Sabemos que lograr y mantener el éxito en las organizaciones requiere
           esfuerzo y espíritu. Por eso creamos una forma de trabajar basada en
           la cooperación y el trabajo en equipo, realizamos todas nuestras
           tareas de forma conjunta, siempre priorizando el bienestar de los
-          individuos y de nuestra madre tierra.
-        </p>
+          individuos y de nuestra madre tierra." SOMOS HEBRA
+        </q>
       </section>
-      <section class="card__members">
+      <section class="card__members wow animate__animated animate__fadeInUp">
         <div class="card__member">
           <img src="./imagenes/mujer1.jpg" alt="mujer" />
           <h2>Juliana Lopez</h2>
@@ -111,7 +112,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer id="contacto">
       <form class="form" action="#">
         <p>Queremos conocerte</p>
         <input type="text" name="nombre" placeholder="Nombre" />
@@ -123,13 +124,16 @@
           placeholder="Dejanos tu comentario"
         ></textarea>
         <div class="checkbox">
-          <input type="checkbox" name="recibirinformacion" value="si" checked />
+          <input type="checkbox" name="recibirinformacion" value="si" />
           <label for="recibirinformacion">quiero recibir informacion</label>
         </div>
-        <input type="submit" value="Enviar" />
+        <input class="home__btn" type="submit" value="Enviar" />
       </form>
       <section class="footer__contacto">
-        <img src="./imagenes/mapa.jpg" alt="ubicacion" />
+        <p>Dónde encontrarnos</p>
+        <a href="https://www.google.com.ar/maps/@-34.607606,-58.4518608,15z"
+          ><img src="./imagenes/mapa1.svg" alt="ubicacion"
+        /></a>
         <h3>CONTACTO</h3>
         <h3>Av. Callao 1100</h3>
         <h3>(011)33678978</h3>
@@ -146,5 +150,9 @@
         </ul>
       </section>
     </footer>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>

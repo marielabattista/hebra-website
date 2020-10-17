@@ -1,7 +1,7 @@
 footer .form input[type=text] {
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 20px;
+  font-weight: 200;
   border: 1px solid white;
   background-color: black;
   color: white;
@@ -21,8 +21,8 @@ li {
 
 a {
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 20px;
+  font-weight: 200;
   text-decoration: none;
   color: white;
 }
@@ -51,15 +51,22 @@ h3 {
 p,
 .parrafolist {
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 20px;
+  font-weight: 200;
   line-height: 1.5;
   color: black;
 }
 
+q {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  quotes: none;
+}
+
 .navbar {
-  background-color: black;
-  height: 20px;
+  background-color: rgba(0, 0, 0, 0.85);
+  height: 60px;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   font-weight: 300;
@@ -67,8 +74,13 @@ p,
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 4px 5px 9px -4px #00000080;
+  z-index: 3;
   padding: 25px 15px;
   color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -1px;
 }
 .navbar .navbar__home img {
   width: 25px;
@@ -77,9 +89,15 @@ p,
 .navbar .navbar__menu {
   display: flex;
 }
+.navbar .navbar__menu .navbar__menuitem {
+  overflow: hidden;
+}
 .navbar .navbar__menu a {
-  padding-left: 10px;
+  padding-left: 25px;
   display: inline-block;
+}
+.navbar .navbar__menu a:hover {
+  color: #dcccbb;
 }
 .navbar .navbar__menu li {
   display: inline-block;
@@ -88,6 +106,7 @@ p,
 .background--raport {
   background-image: url("../imagenes/fondo2.jpg");
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .home {
@@ -134,6 +153,7 @@ p,
   margin: auto;
   box-shadow: 8px 10px 8px -5px #00000080;
   margin-bottom: 40px;
+  animation-duration: 2s;
 }
 .card--reverse {
   flex-direction: row-reverse;
@@ -141,11 +161,11 @@ p,
 .card__img {
   padding: 10px;
   border: 2px solid black;
-  width: 30%;
+  width: 28%;
   transition: width 1s;
 }
 .card__img:hover {
-  width: 35%;
+  width: 30%;
 }
 .card__content {
   padding-right: 30px;
@@ -162,6 +182,11 @@ p,
   padding-bottom: 10px;
 }
 
+.card__title--center {
+  display: inline;
+  margin: auto;
+}
+
 .aboutus {
   display: flex;
   flex-direction: row;
@@ -173,7 +198,7 @@ p,
   margin: 70px auto;
   padding: 30px;
 }
-.aboutus .aboutus__team {
+.aboutus__team {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -186,20 +211,19 @@ p,
   transition: width 1s;
   box-shadow: inset 0px 0px 8px #00000080;
 }
-.aboutus .aboutus__team img {
+.aboutus__team img {
   width: 90%;
   padding-bottom: 10px;
 }
 
 .frase {
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  font-weight: 300;
+  display: flex;
+  text-decoration: none;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.98);
   box-shadow: 5px 10px 6px -6px #00000080;
   width: 70%;
-  margin: 0 auto 50px;
+  margin: 0 auto 80px;
   padding: 30px;
 }
 
@@ -207,13 +231,11 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  background-color: #161413;
+  align-items: flex-start;
+  background-color: black;
   color: white;
   padding: 40px 30px;
+  margin-top: 60px;
 }
 footer .form {
   width: 40%;
@@ -234,6 +256,9 @@ footer .form .checkbox {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
   margin: 10px 0;
 }
 footer .form .checkbox label {
@@ -249,8 +274,8 @@ footer .form input[type=submit] {
 }
 footer .form textarea {
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 20px;
+  font-weight: 200;
   background-color: #161413;
   color: white;
   border: 1px solid white;
@@ -261,18 +286,22 @@ footer .footer__contacto {
   text-align: right;
   color: white;
 }
+footer .footer__contacto p {
+  color: white;
+  margin-bottom: 5px;
+}
 footer .footer__contacto img {
-  width: 50%;
+  width: 80%;
 }
 footer .footer__contacto h3 {
-  padding-top: 7px;
+  padding-top: 5px;
 }
 footer .footer__contacto--redes {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-start;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 footer .footer__contacto--redes img {
   width: 30px;
@@ -280,8 +309,9 @@ footer .footer__contacto--redes img {
 }
 
 .fondoclaro--lineal {
-  background-image: url(../imagenes/fondoclarolineal.jpg);
+  background-image: url(../imagenes/fondoclarolineal3.jpg);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 #cultura {
@@ -294,9 +324,14 @@ footer .footer__contacto--redes img {
   text-align: center;
 }
 
+.card--color {
+  background-color: rgba(255, 255, 255, 0.98);
+}
+
 .fondooscuro--lineal {
   background-image: url(../imagenes/fondooscuro.jpg);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 #materiales {
@@ -309,12 +344,12 @@ footer .footer__contacto--redes img {
 }
 
 .card--dark {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .card__img--dark {
   border: 2px solid white;
-  width: 30%;
+  width: 28%;
 }
 
 .card__title--dark,
@@ -325,11 +360,15 @@ footer .footer__contacto--redes img {
 .fondoclaro--acuarela {
   background-image: url(../imagenes/fondoclaroacuarela.jpg);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 #equipo {
   max-width: 1140px;
-  margin: 0 auto;
+  margin: auto;
+}
+#equipo .frase {
+  margin: 50px auto 95px;
 }
 
 .card__members {
@@ -340,11 +379,10 @@ footer .footer__contacto--redes img {
   align-items: stretch;
   width: 90%;
   padding: 30px;
-  margin: 50px auto;
+  margin: 50px auto 80px;
   box-shadow: 8px 10px 8px -5px #00000080;
 }
-
-.card__member {
+.card__members .card__member {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -357,20 +395,15 @@ footer .footer__contacto--redes img {
   box-shadow: inset 0px 0px 8px #00000080;
   width: 100%;
 }
-.card__member img {
+.card__members .card__member img {
   width: 80%;
 }
-.card__member h2 {
+.card__members .card__member h2 {
   margin-top: 20px;
 }
-.card__member p {
+.card__members .card__member p {
   margin: 10px 0 30px;
   color: black;
-}
-
-.fondooscuro--acuarela {
-  background-image: url("../imagenes/fondo2.jpg");
-  background-size: cover;
 }
 
 #noticias {
@@ -379,16 +412,16 @@ footer .footer__contacto--redes img {
 }
 
 .news {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.95);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  width: 85%;
   padding: 30px;
-  margin: 50px auto;
+  margin: 0px auto 40px;
   box-shadow: 8px 10px 8px -5px #00000080;
+  max-width: 1050px;
 }
 
 .card__news--small {
@@ -396,25 +429,54 @@ footer .footer__contacto--redes img {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 30%;
+  width: 32%;
   text-align: center;
-  margin: 10px 5px;
+  margin: 15px 2px;
   padding: 10px;
-  border: 2px solid black;
+  border: 1px solid black;
   transition: width 1s;
   box-shadow: inset 0px 0px 8px #00000080;
 }
 .card__news--small img {
   width: 100%;
 }
-.card__news--small p {
-  text-align: start;
-  margin: 10px 0 10px;
-  color: black;
+.card__news--small .description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  width: 100%;
 }
-.card__news--small h1,
-.card__news--small button {
-  font-size: 25px;
+.card__news--small .description h3 {
+  color: black;
+  text-align: left;
+}
+.card__news--small .description h4 {
+  font-family: "Open Sans Condensed", sans-serif;
+  text-align: right;
+}
+.card__news--small .titlenews {
+  text-align: start;
+  margin-top: 10px;
+  color: black;
+  font-weight: 600;
+}
+.card__news--small .titlenews:hover {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+}
+.card__news--small .resumenews {
+  font-size: 15px;
+  text-align: left;
+}
+.card__news--small .readmore {
+  font-weight: 400;
+  font-size: 15px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: black;
+  text-align: left;
+  width: 100%;
+  padding: 10px 0px;
 }

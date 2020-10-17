@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Un sitio que promuebe la buena practica del rubro textil, genera conciencia hacia el cuidado del cuerpo y del planeta tierra"
+      content="Un sitio que promueve la buena practica del rubro textil, genera conciencia hacia el cuidado del cuerpo y del planeta tierra"
     />
     <meta
       name="keyword"
@@ -23,7 +23,7 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;800&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -59,13 +59,15 @@
 
     <main id="materiales">
       <h1 class="title1 title1--dark">MATERIALES</h1>
-      <section class="card card--reverse card--dark">
+      <section
+        class="card card--reverse card--dark wow animate__animated animate__fadeInUp"
+      >
         <img
           src="./imagenes/hilado.jpg"
           alt="manocontierra"
           class="card__img card__img--dark"
         />
-        <div class="wow animate__animated animate__fadeInLeft card__content">
+        <div class="card__content">
           <h2 class="card__title card__title--dark">Hilado</h2>
           <p class="card__text card__text--dark">
             Una vez separado de la semilla, la máquina Desmotadora, trabaja al
@@ -80,31 +82,38 @@
           </p>
         </div>
       </section>
-      <section class="card card--dark">
+      <section class="card card--dark wow animate__animated animate__fadeInUp">
         <img
           src="./imagenes/telas.jpg"
           alt="manocontierra"
           class="card__img card__img--dark"
         />
-        <div
-          class="wow animate__animated animate__fadeInRight card__content card__content--right"
-        >
+        <div class="card__content card__content--right">
           <h2 class="card__title card__title--dark">Telas</h2>
           <p class="card__text card__text--dark">
             Tejemos las telas con un mecanimos de ahorro de energia y agua,
             gestionamos el proceso a modo de reducir las fallas y los
             desperdicios a nulo. Trabajamos con fibras continuas que evitan el
-            quiebre de sectores en el textil.
+            quiebre de sectores en el textil. Si decides utilizar tela de
+            algodón ecológico para tus creaciones costuriles, procura que esté
+            teñida con tonos naturales y sustancias libres de colorantes
+            químicos perjudiciales. Las telas ecológicas pueden ser
+            confeccionadas con algodón orgánico, tela reciclada de PET, eco
+            poliester u otro material como pueden ser la madera, tencel, lino,
+            piña, alpaca, cáñamo, soja, bambú, algas marinas, etc, entre otras
+            muchas alternativas.
           </p>
         </div>
       </section>
-      <section class="card card--reverse card--dark">
+      <section
+        class="card card--reverse card--dark wow animate__animated animate__fadeInUp"
+      >
         <img
           src="./imagenes/prendas.jpg"
           alt="manocontierra"
           class="card__img card__img--dark"
         />
-        <div class="wow animate__animated animate__fadeInLeft card__content">
+        <div class="card__content">
           <h2 class="card__title card__title--dark">Prendas</h2>
           <p class="card__text card__text--dark">
             Una prenda realizada con estos textiles pueden soportar muy bien los
@@ -118,6 +127,48 @@
         </div>
       </section>
     </main>
-    <footer id="contacto"></footer>
+    <footer id="contacto">
+      <form class="form" action="#">
+        <p>Queremos conocerte</p>
+        <input type="text" name="nombre" placeholder="Nombre" />
+        <input type="text" name="email" placeholder="Email" />
+        <textarea
+          name="comentario"
+          id="comentario"
+          rows="7"
+          placeholder="Dejanos tu comentario"
+        ></textarea>
+        <div class="checkbox">
+          <input type="checkbox" name="recibirinformacion" value="si" />
+          <label for="recibirinformacion">quiero recibir informacion</label>
+        </div>
+        <input class="home__btn" type="submit" value="Enviar" />
+      </form>
+      <section class="footer__contacto">
+        <p>Dónde encontrarnos</p>
+        <a href="https://www.google.com.ar/maps/@-34.607606,-58.4518608,15z"
+          ><img src="./imagenes/mapa1.svg" alt="ubicacion"
+        /></a>
+        <h3>CONTACTO</h3>
+        <h3>Av. Callao 1100</h3>
+        <h3>(011)33678978</h3>
+        <h3>somoshebra@gmail.com</h3>
+        <ul class="footer__contacto--redes">
+          <li>
+            <a href="https://www.facebook.com">
+              <img src="./imagenes/facebook.svg" alt="facebook" />
+            </a>
+          </li>
+          <a href="https://www.instagram.com">
+            <img src="./imagenes/instagram.svg" alt="instagram" />
+          </a>
+        </ul>
+      </section>
+    </footer>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>

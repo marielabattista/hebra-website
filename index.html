@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Un sitio que promuebe la buena practica del rubro textil, genera conciencia hacia el cuidado del cuerpo y del planeta tierra"
+      content="Un sitio que promueve la buena practica del rubro textil, genera conciencia hacia el cuidado del cuerpo y del planeta tierra"
     />
     <meta
       name="keyword"
@@ -23,7 +23,7 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;800&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -67,9 +67,12 @@
           </button>
         </section>
       </div>
-      <section id="conocermas" class="card card--reverse">
+      <section
+        id="conocermas"
+        class="card card--reverse wow animate__animated animate__fadeInUp"
+      >
         <img src="./imagenes/homealgodon.jpg" alt="algodon" class="card__img" />
-        <div class="wow animate__animated animate__fadeInLeft card__content">
+        <div class="card__content">
           <h2 class="card__title">CULTURA</h2>
           <p class="card__text">
             La agricultura sostenible es un concepto que involucra lo económico,
@@ -86,15 +89,13 @@
           </button>
         </div>
       </section>
-      <section class="card">
+      <section class="card wow animate__animated animate__fadeInUp">
         <img
           src="./imagenes/homemateriales.jpg"
           alt="algodon"
           class="card__img"
         />
-        <div
-          class="wow animate__animated animate__fadeInRight card__content card__content--right"
-        >
+        <div class="card__content card__content--right">
           <h2 class="card__title">MATERIALES</h2>
           <p class="card__text">
             Los materiales seleccionados se analizan bajo los principios de la
@@ -110,29 +111,31 @@
           </button>
         </div>
       </section>
-      <section class="aboutus">
-        <div class="aboutus__team">
-          <img src="./imagenes/mujer1.jpg" alt="mujer" />
-          <h2>Juliana Lopez</h2>
-          <p>Ingeniera quimica-Cofounder</p>
-        </div>
-        <div class="aboutus__team">
-          <img src="./imagenes/hombre.jpg" alt="hombre" />
-          <h2>Gabriel Aguirre</h2>
-          <p>Diseñador-Cofounder</p>
-        </div>
-        <div class="aboutus__team">
-          <img src="./imagenes/hombre2.jpg" alt="hombre" />
-          <h2>Martin Catalan</h2>
-          <p>Administrador-Cofounder</p>
-        </div>
-      </section>
+      <a href="equipo.html">
+        <section class="aboutus">
+          <div class="aboutus__team">
+            <img src="./imagenes/mujer1.jpg" alt="mujer" />
+            <h2>Juliana Lopez</h2>
+            <p>Ingeniera quimica-Cofounder</p>
+          </div>
+          <div class="aboutus__team">
+            <img src="./imagenes/hombre.jpg" alt="hombre" />
+            <h2>Gabriel Aguirre</h2>
+            <p>Diseñador-Cofounder</p>
+          </div>
+          <div class="aboutus__team">
+            <img src="./imagenes/hombre2.jpg" alt="hombre" />
+            <h2>Martin Catalan</h2>
+            <p>Administrador-Cofounder</p>
+          </div>
+        </section>
+      </a>
       <section>
-        <p class="frase">
+        <q class="frase">
           “Hoy más que nunca, la vida debe caracterizarse por un sentido de
           responsabilidad universal, no solo entre naciones y entre humanos,
           sino entre humanos y cualquier otra forma de vida”- Dalai Lama.
-        </p>
+        </q>
       </section>
     </main>
     <footer id="contacto">
@@ -147,14 +150,15 @@
           placeholder="Dejanos tu comentario"
         ></textarea>
         <div class="checkbox">
-          <input type="checkbox" name="recibirinformacion" value="si" checked />
+          <input type="checkbox" name="recibirinformacion" value="si" />
           <label for="recibirinformacion">quiero recibir informacion</label>
         </div>
         <input class="home__btn" type="submit" value="Enviar" />
       </form>
       <section class="footer__contacto">
+        <p>Dónde encontrarnos</p>
         <a href="https://www.google.com.ar/maps/@-34.607606,-58.4518608,15z"
-          ><img src="./imagenes/mapa.jpg" alt="ubicacion"
+          ><img src="./imagenes/mapa1.svg" alt="ubicacion"
         /></a>
         <h3>CONTACTO</h3>
         <h3>Av. Callao 1100</h3>
