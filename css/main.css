@@ -66,41 +66,52 @@ q {
 
 .navbar {
   background-color: rgba(0, 0, 0, 0.85);
-  height: 60px;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   font-weight: 300;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   box-shadow: 4px 5px 9px -4px #00000080;
   z-index: 3;
-  padding: 25px 15px;
+  padding: 0 15px;
   color: white;
   position: -webkit-sticky;
   position: sticky;
-  top: -1px;
+  top: 0;
+  height: auto;
 }
-.navbar .navbar__home img {
+.navbar .logo img {
   width: 25px;
   padding: 10px 0;
 }
 .navbar .navbar__menu {
-  display: flex;
-}
-.navbar .navbar__menu .navbar__menuitem {
-  overflow: hidden;
-}
-.navbar .navbar__menu a {
-  padding-left: 25px;
-  display: inline-block;
-}
-.navbar .navbar__menu a:hover {
-  color: #dcccbb;
+  display: block;
 }
 .navbar .navbar__menu li {
-  display: inline-block;
+  display: block;
+  padding-bottom: 10px;
+}
+.navbar .navbar__menu li a:hover {
+  color: #dcccbb;
+}
+@media (min-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+  }
+  .navbar .navbar__menu {
+    display: inline-block;
+  }
+  .navbar .navbar__menu li {
+    padding-left: 25px;
+    padding-bottom: 0;
+    display: inline-block;
+  }
 }
 
 .background--raport {

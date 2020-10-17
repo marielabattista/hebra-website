@@ -1,5 +1,6 @@
 @import "_placeholders.scss";
 @import "_mixins.scss";
+@import "_breakpoints.scss";
 
 * {
   margin: 0;
@@ -43,37 +44,45 @@ q {
 
 .navbar {
   background-color: rgba(0, 0, 0, 0.85);
-  height: 60px;
   @include fontStyle(subtitle);
-  @include flex(space-between, center);
+  @include flex(flex-start, flex-start, column);
   box-shadow: 4px 5px 9px -4px #00000080;
   z-index: 3;
-  padding: 25px 15px;
+  padding: 0 15px;
   color: white;
   position: sticky;
-  top: -1px;
+  top: 0;
+  height: auto;
 
-  .navbar__home img {
+  .logo img {
     width: 25px;
     padding: 10px 0;
   }
   .navbar__menu {
-    display: flex;
-    .navbar__menuitem {
-      overflow: hidden;
-    }
-    a {
-      padding-left: 25px;
-      display: inline-block;
-      &:hover {
+    display: block;
+    li {
+      display: block;
+      padding-bottom: 10px;
+      a:hover {
         color: #dcccbb;
       }
     }
-    li {
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    @include flex(space-between, center);
+    height: 60px;
+    .navbar__menu {
       display: inline-block;
+      li {
+        padding-left: 25px;
+        padding-bottom: 0;
+        display: inline-block;
+      }
     }
   }
 }
+
 .background--raport {
   background-image: url("../imagenes/fondo2.jpg");
   background-size: cover;
