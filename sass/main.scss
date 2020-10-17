@@ -42,7 +42,7 @@ q {
   quotes: none;
 }
 
-.navbar {
+.header {
   background-color: rgba(0, 0, 0, 0.85);
   @include fontStyle(subtitle);
   @include flex(flex-start, flex-start, column);
@@ -54,30 +54,52 @@ q {
   top: 0;
   height: auto;
 
+  .menubtn {
+    position: absolute;
+    right: 0;
+    margin: 10px;
+    &:checked ~ .navbar {
+      height: 100vh;
+    }
+  }
+
   .logo img {
     width: 25px;
     padding: 10px 0;
   }
-  .navbar__menu {
-    display: block;
-    li {
+
+  .navbar {
+    height: 0;
+    .navbar__menu {
       display: block;
-      padding-bottom: 10px;
-      a:hover {
-        color: #dcccbb;
+      li {
+        display: block;
+        padding-bottom: 10px;
+        a:hover {
+          color: #dcccbb;
+        }
       }
     }
   }
 
   @media (min-width: $breakpoint-tablet) {
-    @include flex(space-between, center);
+    @include flex(space-between, center, row);
     height: 60px;
-    .navbar__menu {
-      display: inline-block;
-      li {
-        padding-left: 25px;
-        padding-bottom: 0;
-        display: inline-block;
+    .menubtn {
+      display: none;
+      &:checked ~ .navbar {
+        height: auto;
+      }
+    }
+    .navbar {
+      height: auto;
+      .navbar__menu {
+        display: flex;
+        li {
+          padding-left: 25px;
+          padding-bottom: 0;
+          display: flex;
+        }
       }
     }
   }
