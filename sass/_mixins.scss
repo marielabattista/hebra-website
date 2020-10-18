@@ -1,3 +1,5 @@
+@import "_breakpoints.scss";
+
 @mixin flex(
   $justify-content: flex-start,
   $align-items: flex-start,
@@ -14,17 +16,29 @@
 
   @if $type == title {
     font-family: "Open Sans Condensed", sans-serif;
-    font-size: 80px;
+    font-size: 50px;
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 80px;
+    }
   } @else if $type == subtitle {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 300;
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 30px;
+    }
   } @else if $type == text {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 200;
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 20px;
+    }
   } @else if $type == btn {
-    font-size: 15px;
-  } @else if $type == secondtext {
     font-size: 12px;
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 15px;
+    }
+  } @else if $type == secondtext {
+    font-size: 15px;
     font-weight: 200;
   } @else {
     @error "Unknown font type #{$type}.";
