@@ -77,15 +77,55 @@ q {
   z-index: 3;
   padding: 0 15px;
   color: white;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
-  height: auto;
+  min-height: 60px;
+}
+.header .menuicon {
+  cursor: pointer;
+  position: absolute;
+  right: 0px;
+  padding: 29px 15px;
+  -webkit-user-select: none;
+          user-select: none;
+}
+.header .menuicon .navicon {
+  position: relative;
+  background: white;
+  display: block;
+  height: 2px;
+  transition: background 0.2s ease-out;
+  width: 24px;
+}
+.header .menuicon .navicon:before, .header .menuicon .navicon:after {
+  background: white;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+.header .menuicon .navicon:before {
+  top: 8px;
+}
+.header .menuicon .navicon:after {
+  top: -8px;
 }
 .header .menubtn {
-  position: absolute;
-  right: 0;
-  margin: 10px;
+  display: none;
+}
+.header .menubtn:checked ~ .menuicon .navicon {
+  background: transparent;
+}
+.header .menubtn:checked ~ .menuicon .navicon:before {
+  top: 0;
+  transform: rotate(-45deg);
+}
+.header .menubtn:checked ~ .menuicon .navicon:after {
+  top: 0;
+  transform: rotate(45deg);
 }
 .header .menubtn:checked ~ .navbar {
   height: 100vh;
@@ -117,7 +157,7 @@ q {
     align-items: center;
     height: 60px;
   }
-  .header .menubtn {
+  .header .menuicon {
     display: none;
   }
   .header .menubtn:checked ~ .navbar {
@@ -136,18 +176,20 @@ q {
   }
 }
 
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
 .background--raport {
   background-image: url("../imagenes/fondo2.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
 
-.home {
-  max-width: 1140px;
-  margin: auto;
-}
 .home .home__logo {
-  height: 100vh;
+  height: calc(100vh - 60px);
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -347,11 +389,6 @@ footer .footer__contacto--redes img {
   background-attachment: fixed;
 }
 
-#cultura {
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
 .title1 {
   padding: 70px 0;
   text-align: center;
@@ -365,11 +402,6 @@ footer .footer__contacto--redes img {
   background-image: url(../imagenes/fondooscuro.jpg);
   background-size: cover;
   background-attachment: fixed;
-}
-
-#materiales {
-  max-width: 1140px;
-  margin: 0 auto;
 }
 
 .title1--dark {
@@ -394,14 +426,6 @@ footer .footer__contacto--redes img {
   background-image: url(../imagenes/fondoclaroacuarela.jpg);
   background-size: cover;
   background-attachment: fixed;
-}
-
-#equipo {
-  max-width: 1140px;
-  margin: auto;
-}
-#equipo .frase {
-  margin: 50px auto 95px;
 }
 
 .card__members {
