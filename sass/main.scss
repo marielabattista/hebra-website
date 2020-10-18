@@ -70,6 +70,8 @@ q {
 
   .navbar {
     height: 0;
+    overflow: hidden;
+    transition: height 0.2s ease-out;
     .navbar__menu {
       display: block;
       li {

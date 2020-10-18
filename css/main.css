@@ -96,6 +96,8 @@ q {
 }
 .header .navbar {
   height: 0;
+  overflow: hidden;
+  transition: height 0.2s ease-out;
 }
 .header .navbar .navbar__menu {
   display: block;
