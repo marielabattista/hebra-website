@@ -60,14 +60,7 @@
 
     <main class="container">
       <h1 class="title1 title1--dark">MATERIALES</h1>
-      <section
-        class="card card--reverse card--dark wow animate__animated animate__fadeInUp"
-      >
-        <img
-          src="./imagenes/hilado.jpg"
-          alt="manocontierra"
-          class="card__img card__img--dark"
-        />
+      <section class="card card--dark wow animate__animated animate__fadeInUp">
         <div class="card__content">
           <h2 class="card__title card__title--dark">Hilado</h2>
           <p class="card__text card__text--dark">
@@ -82,13 +75,15 @@
             naturales que serán hilados en conos reciclables.
           </p>
         </div>
-      </section>
-      <section class="card card--dark wow animate__animated animate__fadeInUp">
         <img
-          src="./imagenes/telas.jpg"
+          src="./imagenes/hilado.jpg"
           alt="manocontierra"
-          class="card__img card__img--dark"
+          class="card__img card__img--view card__img--dark"
         />
+      </section>
+      <section
+        class="card card--reverse card--dark wow animate__animated animate__fadeInUp"
+      >
         <div class="card__content card__content--right">
           <h2 class="card__title card__title--dark">Telas</h2>
           <p class="card__text card__text--dark">
@@ -105,15 +100,13 @@
             muchas alternativas.
           </p>
         </div>
-      </section>
-      <section
-        class="card card--reverse card--dark wow animate__animated animate__fadeInUp"
-      >
         <img
-          src="./imagenes/prendas.jpg"
+          src="./imagenes/telas.jpg"
           alt="manocontierra"
-          class="card__img card__img--dark"
+          class="card__img card__img--view card__img--dark"
         />
+      </section>
+      <section class="card card--dark wow animate__animated animate__fadeInUp">
         <div class="card__content">
           <h2 class="card__title card__title--dark">Prendas</h2>
           <p class="card__text card__text--dark">
@@ -126,9 +119,14 @@
             Estas prendas te hacen bien a vos y al planeta!
           </p>
         </div>
+        <img
+          src="./imagenes/prendas.jpg"
+          alt="manocontierra"
+          class="card__img card__img--view card__img--dark"
+        />
       </section>
     </main>
-    <footer id="contacto">
+    <footer>
       <form class="form" action="#">
         <p>Queremos conocerte</p>
         <input type="text" name="nombre" placeholder="Nombre" />
@@ -157,11 +155,19 @@
         <ul class="footer__contacto--redes">
           <li>
             <a href="https://www.facebook.com">
-              <img src="./imagenes/facebook.svg" alt="facebook" />
+              <img
+                class="redesicon"
+                src="./imagenes/facebook.svg"
+                alt="facebook"
+              />
             </a>
           </li>
           <a href="https://www.instagram.com">
-            <img src="./imagenes/instagram.svg" alt="instagram" />
+            <img
+              class="redesicon"
+              src="./imagenes/instagram.svg"
+              alt="instagram"
+            />
           </a>
         </ul>
       </section>

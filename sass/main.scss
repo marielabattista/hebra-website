@@ -237,7 +237,7 @@ q {
   margin: auto;
   box-shadow: 8px 10px 8px -5px #00000080;
   margin-bottom: 40px;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   @media (min-width: $breakpoint-tablet) {
     flex-direction: row;
 
@@ -248,19 +248,23 @@ q {
 
   &__img {
     display: none;
+    padding: 10px;
+    border: 2px solid black;
+    width: 100%;
+    margin: 20px auto;
+    transition: width 1s;
+
     @media (min-width: $breakpoint-tablet) {
       display: inline-block;
-      padding: 10px;
-      border: 2px solid black;
       width: 28%;
-      transition: width 1s;
+      margin: 0;
       &:hover {
         width: 30%;
       }
     }
   }
   &__content {
-    @include flex(space-between, flex-start, column);
+    @include flex(space-around, flex-start, column);
     @media (min-width: $breakpoint-tablet) {
       padding-right: 30px;
     }
@@ -324,7 +328,11 @@ q {
     background-color: rgba(255, 255, 255, 0.9);
     margin: 70px auto;
   }
-
+  h2 {
+    @media (min-width: $breakpoint-tablet) {
+      display: none;
+    }
+  }
   &__team {
     @include flex(flex-start, center, column);
     text-align: center;
@@ -418,7 +426,7 @@ footer {
       @include flex(flex-start);
       margin-top: 20px;
       .redesicon {
-        width: 25px;
+        width: 30px;
         margin-right: 10px;
       }
     }
@@ -452,8 +460,11 @@ footer {
 }
 
 .title1 {
-  padding: 70px 0;
+  padding: 30px 0 40px;
   text-align: center;
+  @media (min-width: $breakpoint-tablet) {
+    padding: 120px 0 80px;
+  }
 }
 .card--color {
   background-color: rgba(255, 255, 255, 0.98);
@@ -481,7 +492,6 @@ footer {
 }
 .card__img--dark {
   border: 2px solid white;
-  width: 28%;
 }
 .card__title--dark,
 .card__text--dark {
@@ -489,7 +499,7 @@ footer {
 }
 
 // equipo
-.background--materiales {
+.background--equipo {
   background-image: url(../imagenes/fondoclaroacuarela.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -497,21 +507,33 @@ footer {
 
 .card__members {
   background-color: rgba(255, 255, 255, 0.9);
-  @include flex(space-between, stretch);
-  width: 90%;
+  @include flex(space-between, stretch, column);
+  width: 100%;
   padding: 30px;
   margin: 50px auto 80px;
   box-shadow: 8px 10px 8px -5px #00000080;
 
+  @media (min-width: $breakpoint-tablet) {
+    @include flex(space-between, stretch);
+    width: 90%;
+    padding: 30px;
+    margin: 50px auto 80px;
+    box-shadow: 8px 10px 8px -5px #00000080;
+  }
+
   .card__member {
     @include flex(flex-start, center, column);
     text-align: center;
-    margin: 10px;
     padding: 10px;
     border: 2px solid black;
     transition: width 1s;
     box-shadow: inset 0px 0px 8px #00000080;
     width: 100%;
+    margin-bottom: 10px;
+    @media (min-width: $breakpoint-tablet) {
+      @include flex(flex-start, center, column);
+      margin-right: 10px;
+    }
     img {
       width: 80%;
     }
@@ -539,22 +561,29 @@ footer {
 }
 .news {
   background-color: rgba(255, 255, 255, 0.95);
-  @include flex(space-between);
-  flex-wrap: wrap;
+  @include flex(space-between, center, column);
   padding: 30px;
   margin: 0px auto 40px;
   box-shadow: 8px 10px 8px -5px #00000080;
   max-width: 1050px;
+  @media (min-width: $breakpoint-tablet) {
+    @include flex(space-between);
+    flex-wrap: wrap;
+  }
 }
 .card__news--small {
   @include flex(flex-start, center, column);
-  width: 32%;
+  width: 100%;
   text-align: center;
   margin: 15px 2px;
   padding: 10px;
   border: 1px solid black;
   transition: width 1s;
   box-shadow: inset 0px 0px 8px #00000080;
+  @media (min-width: $breakpoint-tablet) {
+    @include flex(flex-start, center, column);
+    width: 32%;
+  }
   img {
     width: 100%;
   }
