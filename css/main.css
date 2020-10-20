@@ -862,6 +862,7 @@ q {
 
 .card.card--dark {
   background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 8px 10px 8px -5px black;
 }
 
 .card__img--dark {

@@ -13,8 +13,9 @@
 .title1--dark {
   color: $Primari-color;
 }
-.card.card--dark {
+.card--dark {
   background-color: $background-colordark;
+  box-shadow: 8px 10px 8px -5px $Secondari-color;
 }
 .card__img--dark {
   border: 2px solid $Primari-color;
