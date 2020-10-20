@@ -1,0 +1,25 @@
+@import "_placeholders.scss";
+@import "_mixins.scss";
+@import "_breakpoints.scss";
+@import "_general.scss";
+@import "_colours.scss";
+
+.background--materiales {
+  background-image: url(../imagenes/fondooscuro.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.title1--dark {
+  color: $Primari-color;
+}
+.card.card--dark {
+  background-color: $background-colordark;
+}
+.card__img--dark {
+  border: 2px solid $Primari-color;
+}
+.card__title--dark,
+.card__text--dark {
+  color: $Primari-color;
+}

@@ -1,0 +1,44 @@
+@import "_placeholders.scss";
+@import "_mixins.scss";
+@import "_breakpoints.scss";
+@import "_colours.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  @include fontStyle(text);
+  text-decoration: none;
+  color: $Primari-color;
+}
+
+h1 {
+  @include fontStyle(title);
+  color: $Secondari-color;
+}
+h2 {
+  @include fontStyle(subtitle);
+  color: $Secondari-color;
+}
+h3 {
+  @include fontStyle(secondtext);
+  color: $Primari-color;
+}
+
+p,
+.parrafolist {
+  @include fontStyle(text);
+  line-height: 1.5;
+  color: $Secondari-color;
+}
+q {
+  @include fontStyle(text);
+  quotes: none;
+}

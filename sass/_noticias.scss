@@ -1,0 +1,76 @@
+.background--noticias {
+  background-image: url(../imagenes/fondoclarolineal3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#noticias {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.news {
+  background-color: $background-color;
+  @include flex(space-between, center, column);
+  padding: 30px;
+  margin: 0px auto 40px;
+  box-shadow: 8px 10px 8px -5px $shadow;
+  max-width: 1050px;
+  @media (min-width: $breakpoint-tablet) {
+    @include flex(space-between);
+    flex-wrap: wrap;
+  }
+}
+.card__news--small {
+  @include flex(flex-start, center, column);
+  width: 100%;
+  text-align: center;
+  margin: 15px 2px;
+  padding: 10px;
+  border: 1px solid $Secondari-color;
+  transition: width 1s;
+  box-shadow: inset 0px 0px 8px $shadow;
+  @media (min-width: $breakpoint-tablet) {
+    @include flex(flex-start, center, column);
+    width: 32%;
+  }
+  img {
+    width: 100%;
+  }
+  .description {
+    @include flex(space-between, center);
+    font-size: 20px;
+    width: 100%;
+    h3 {
+      color: $Secondari-color;
+      text-align: left;
+    }
+    h4 {
+      font-family: "Open Sans Condensed", sans-serif;
+      text-align: right;
+    }
+  }
+
+  .titlenews {
+    text-align: start;
+    margin-top: 10px;
+    color: $Secondari-color;
+    font-weight: 600;
+    &:hover {
+      text-decoration-line: underline;
+    }
+  }
+  .resumenews {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .readmore {
+    font-weight: 400;
+    font-size: 15px;
+    text-decoration-line: underline;
+    color: $Secondari-color;
+    text-align: left;
+    width: 100%;
+    padding: 10px 0px;
+  }
+}

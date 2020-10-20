@@ -1,0 +1,49 @@
+@import "_placeholders.scss";
+@import "_mixins.scss";
+@import "_breakpoints.scss";
+@import "_general.scss";
+@import "_colours.scss";
+
+.background--equipo {
+  background-image: url(../imagenes/fondoclarolineal3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.team {
+  @include flex(space-arround, center, column);
+  margin: auto;
+  animation-duration: 1.5s;
+  @media (min-width: $breakpoint-tablet) {
+    padding: 20px;
+  }
+}
+.member {
+  @include flex(space-between, center, column);
+  margin-bottom: 20px;
+
+  @media (min-width: $breakpoint-tablet) {
+    @include flex(space-between, center);
+    margin-bottom: 40px;
+    &--reverse {
+      flex-direction: row-reverse;
+    }
+  }
+  img {
+    width: 100%;
+    @media (min-width: $breakpoint-tablet) {
+      width: 50%;
+    }
+  }
+  .text {
+    background-color: $background-color;
+    margin-top: 20px;
+    padding: 20px;
+    @media (min-width: $breakpoint-tablet) {
+      box-shadow: 8px 10px 8px -5px $shadow;
+      margin: 15px;
+      &--reverse {
+        box-shadow: -8px 10px 8px -5px $shadow;
+      }
+    }
+  }
+}

@@ -1,10 +1,11 @@
 @import "_mixins.scss";
+@import "_colours.scss";
 
 %input {
   @include fontStyle(text);
-  border: 1px solid white;
-  background-color: black;
-  color: white;
+  border: 1px solid $Primari-color;
+  background-color: $Secondari-color;
+  color: $Primari-color;
   margin: 10px 0;
   padding: 2px 0 2px 5px;
 }

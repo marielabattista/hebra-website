@@ -1,7 +1,7 @@
 footer .form input[type=text] {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
-  font-weight: 200;
+  font-weight: 300;
   border: 1px solid white;
   background-color: black;
   color: white;
@@ -11,6 +11,24 @@ footer .form input[type=text] {
 @media (min-width: 768px) {
   footer .form input[type=text] {
     font-size: 20px;
+    font-weight: 200;
+  }
+}
+
+footer .form input[type=text] {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  margin: 10px 0;
+  padding: 2px 0 2px 5px;
+}
+@media (min-width: 768px) {
+  footer .form input[type=text] {
+    font-size: 20px;
+    font-weight: 200;
   }
 }
 
@@ -27,13 +45,14 @@ li {
 a {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
-  font-weight: 200;
+  font-weight: 300;
   text-decoration: none;
   color: white;
 }
 @media (min-width: 768px) {
   a {
     font-size: 20px;
+    font-weight: 200;
   }
 }
 
@@ -72,7 +91,7 @@ p,
 .parrafolist {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.5;
   color: black;
 }
@@ -80,18 +99,20 @@ p,
   p,
 .parrafolist {
     font-size: 20px;
+    font-weight: 200;
   }
 }
 
 q {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
-  font-weight: 200;
+  font-weight: 300;
   quotes: none;
 }
 @media (min-width: 768px) {
   q {
     font-size: 20px;
+    font-weight: 200;
   }
 }
 
@@ -101,7 +122,7 @@ q {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  box-shadow: 4px 5px 9px -4px #00000080;
+  box-shadow: 4px 5px 9px -4px black;
   z-index: 1;
   padding: 0 15px;
   color: white;
@@ -175,9 +196,6 @@ q {
   display: block;
   padding: 15px 0;
 }
-.header .navbar .navbar__menu li a a:hover {
-  color: #dcccbb;
-}
 .header .navbar .navbar__redes {
   display: flex;
   flex-direction: row;
@@ -213,6 +231,9 @@ q {
     padding-bottom: 0;
     display: flex;
   }
+  .header .navbar .navbar__menu li a:hover {
+    color: #dcccbb;
+  }
 }
 
 .container {
@@ -228,8 +249,13 @@ q {
 
 .background--home {
   background-image: url("../imagenes/fondo2.jpg");
-  background-size: cover;
   background-attachment: fixed;
+  background-size: 500%;
+}
+@media (min-width: 768px) {
+  .background--home {
+    background-size: cover;
+  }
 }
 
 .home .home__logo {
@@ -244,7 +270,7 @@ q {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 20px;
   margin: auto;
 }
@@ -266,19 +292,12 @@ q {
 }
 
 .home__btn {
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px;
   background-color: black;
   border-radius: 20px;
   border: 1px solid black;
   display: inline;
   color: white;
   padding: 10px 60px;
-}
-@media (min-width: 768px) {
-  .home__btn {
-    font-size: 15px;
-  }
 }
 @media (min-width: 768px) {
   .home__btn {
@@ -302,9 +321,9 @@ q {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.97);
   margin: auto;
-  box-shadow: 8px 10px 8px -5px #00000080;
+  box-shadow: 8px 10px 8px -5px #6c6c6c;
   margin-bottom: 40px;
   animation-duration: 1.5s;
 }
@@ -375,24 +394,24 @@ q {
 
 .frase {
   display: flex;
+  flex-direction: column;
   text-decoration: none;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.98);
-  box-shadow: 5px 10px 6px -6px #00000080;
+  background-color: rgba(255, 255, 255, 0.97);
+  box-shadow: 5px 10px 6px -6px #6c6c6c;
   margin: auto;
   padding: 30px;
+  margin-bottom: 30px;
 }
 @media (min-width: 768px) {
   .frase {
-    display: flex;
-    text-decoration: none;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.98);
-    box-shadow: 5px 10px 6px -6px #00000080;
     width: 70%;
     margin: 0 auto 80px;
     padding: 30px;
   }
+}
+.frase h2 {
+  padding-top: 10px;
 }
 
 .aboutus {
@@ -400,7 +419,7 @@ q {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.97);
   width: 100%;
   height: 100%;
   margin: 50px auto;
@@ -412,7 +431,7 @@ q {
     flex-direction: row;
     justify-content: space-around;
     align-items: stretch;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.97);
     margin: 70px auto;
   }
 }
@@ -430,21 +449,11 @@ q {
   margin: 10px;
   padding: 10px;
   border: 2px solid black;
-  box-shadow: inset 0px 0px 8px #00000080;
+  box-shadow: inset 0px 0px 8px #6c6c6c;
 }
 @media (min-width: 768px) {
   .aboutus__team {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
-    border: 2px solid black;
     width: 30%;
-    transition: width 1s;
-    box-shadow: inset 0px 0px 8px #00000080;
   }
 }
 .aboutus__team img {
@@ -492,12 +501,13 @@ footer .form .checkbox {
   align-items: center;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
-  font-weight: 200;
+  font-weight: 300;
   margin: 10px 0;
 }
 @media (min-width: 768px) {
   footer .form .checkbox {
     font-size: 20px;
+    font-weight: 200;
   }
 }
 footer .form .checkbox label {
@@ -514,8 +524,8 @@ footer .form input[type=submit] {
 footer .form textarea {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
-  font-weight: 200;
-  background-color: #161413;
+  font-weight: 300;
+  background-color: black;
   color: white;
   border: 1px solid white;
   padding-left: 5px;
@@ -524,6 +534,7 @@ footer .form textarea {
 @media (min-width: 768px) {
   footer .form textarea {
     font-size: 20px;
+    font-weight: 200;
   }
 }
 @media (min-width: 768px) {
@@ -579,6 +590,124 @@ footer .footer__contacto--redes .redesicon {
   }
 }
 
+footer .form input[type=text] {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  margin: 10px 0;
+  padding: 2px 0 2px 5px;
+}
+@media (min-width: 768px) {
+  footer .form input[type=text] {
+    font-size: 20px;
+    font-weight: 200;
+  }
+}
+
+footer .form input[type=text] {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  margin: 10px 0;
+  padding: 2px 0 2px 5px;
+}
+@media (min-width: 768px) {
+  footer .form input[type=text] {
+    font-size: 20px;
+    font-weight: 200;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: none;
+  color: white;
+}
+@media (min-width: 768px) {
+  a {
+    font-size: 20px;
+    font-weight: 200;
+  }
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 50px;
+  color: black;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 80px;
+  }
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  color: black;
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 200;
+  color: white;
+}
+
+p,
+.parrafolist {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: black;
+}
+@media (min-width: 768px) {
+  p,
+.parrafolist {
+    font-size: 20px;
+    font-weight: 200;
+  }
+}
+
+q {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  quotes: none;
+}
+@media (min-width: 768px) {
+  q {
+    font-size: 20px;
+    font-weight: 200;
+  }
+}
+
 .background--cultura {
   background-image: url(../imagenes/fondoclarolineal3.jpg);
   background-size: cover;
@@ -596,11 +725,129 @@ footer .footer__contacto--redes .redesicon {
 }
 
 .card--color {
-  background-color: rgba(255, 255, 255, 0.98);
+  background-color: rgba(255, 255, 255, 0.97);
 }
 
 .card__img--view {
   display: inline-block;
+}
+
+footer .form input[type=text] {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  margin: 10px 0;
+  padding: 2px 0 2px 5px;
+}
+@media (min-width: 768px) {
+  footer .form input[type=text] {
+    font-size: 20px;
+    font-weight: 200;
+  }
+}
+
+footer .form input[type=text] {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  margin: 10px 0;
+  padding: 2px 0 2px 5px;
+}
+@media (min-width: 768px) {
+  footer .form input[type=text] {
+    font-size: 20px;
+    font-weight: 200;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: none;
+  color: white;
+}
+@media (min-width: 768px) {
+  a {
+    font-size: 20px;
+    font-weight: 200;
+  }
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 50px;
+  color: black;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 80px;
+  }
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  color: black;
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 200;
+  color: white;
+}
+
+p,
+.parrafolist {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: black;
+}
+@media (min-width: 768px) {
+  p,
+.parrafolist {
+    font-size: 20px;
+    font-weight: 200;
+  }
+}
+
+q {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  quotes: none;
+}
+@media (min-width: 768px) {
+  q {
+    font-size: 20px;
+    font-weight: 200;
+  }
 }
 
 .background--materiales {
@@ -613,7 +860,7 @@ footer .footer__contacto--redes .redesicon {
   color: white;
 }
 
-.card--dark {
+.card.card--dark {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
@@ -626,66 +873,184 @@ footer .footer__contacto--redes .redesicon {
   color: white;
 }
 
+footer .form input[type=text] {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  margin: 10px 0;
+  padding: 2px 0 2px 5px;
+}
+@media (min-width: 768px) {
+  footer .form input[type=text] {
+    font-size: 20px;
+    font-weight: 200;
+  }
+}
+
+footer .form input[type=text] {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  margin: 10px 0;
+  padding: 2px 0 2px 5px;
+}
+@media (min-width: 768px) {
+  footer .form input[type=text] {
+    font-size: 20px;
+    font-weight: 200;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: none;
+  color: white;
+}
+@media (min-width: 768px) {
+  a {
+    font-size: 20px;
+    font-weight: 200;
+  }
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 50px;
+  color: black;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 80px;
+  }
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  color: black;
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 200;
+  color: white;
+}
+
+p,
+.parrafolist {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: black;
+}
+@media (min-width: 768px) {
+  p,
+.parrafolist {
+    font-size: 20px;
+    font-weight: 200;
+  }
+}
+
+q {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  quotes: none;
+}
+@media (min-width: 768px) {
+  q {
+    font-size: 20px;
+    font-weight: 200;
+  }
+}
+
 .background--equipo {
-  background-image: url(../imagenes/fondoclaroacuarela.jpg);
+  background-image: url(../imagenes/fondoclarolineal3.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
-.card__members {
-  background-color: rgba(255, 255, 255, 0.9);
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-arround;
+  align-items: center;
+  margin: auto;
+  animation-duration: 1.5s;
+}
+@media (min-width: 768px) {
+  .team {
+    padding: 20px;
+  }
+}
+
+.member {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: stretch;
-  width: 100%;
-  padding: 30px;
-  margin: 50px auto 80px;
-  box-shadow: 8px 10px 8px -5px #00000080;
+  align-items: center;
+  margin-bottom: 20px;
 }
 @media (min-width: 768px) {
-  .card__members {
+  .member {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: stretch;
-    width: 90%;
-    padding: 30px;
-    margin: 50px auto 80px;
-    box-shadow: 8px 10px 8px -5px #00000080;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .member--reverse {
+    flex-direction: row-reverse;
   }
 }
-.card__members .card__member {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  text-align: center;
-  padding: 10px;
-  border: 2px solid black;
-  transition: width 1s;
-  box-shadow: inset 0px 0px 8px #00000080;
+.member img {
   width: 100%;
-  margin-bottom: 10px;
 }
 @media (min-width: 768px) {
-  .card__members .card__member {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin-right: 10px;
+  .member img {
+    width: 50%;
   }
 }
-.card__members .card__member img {
-  width: 80%;
-}
-.card__members .card__member h2 {
+.member .text {
+  background-color: rgba(255, 255, 255, 0.97);
   margin-top: 20px;
+  padding: 20px;
 }
-.card__members .card__member p {
-  margin: 10px 0 30px;
-  color: black;
+@media (min-width: 768px) {
+  .member .text {
+    box-shadow: 8px 10px 8px -5px #6c6c6c;
+    margin: 15px;
+  }
+  .member .text--reverse {
+    box-shadow: -8px 10px 8px -5px #6c6c6c;
+  }
 }
 
 .background--noticias {
@@ -700,14 +1065,14 @@ footer .footer__contacto--redes .redesicon {
 }
 
 .news {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.97);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 30px;
   margin: 0px auto 40px;
-  box-shadow: 8px 10px 8px -5px #00000080;
+  box-shadow: 8px 10px 8px -5px #6c6c6c;
   max-width: 1050px;
 }
 @media (min-width: 768px) {
@@ -731,7 +1096,7 @@ footer .footer__contacto--redes .redesicon {
   padding: 10px;
   border: 1px solid black;
   transition: width 1s;
-  box-shadow: inset 0px 0px 8px #00000080;
+  box-shadow: inset 0px 0px 8px #6c6c6c;
 }
 @media (min-width: 768px) {
   .card__news--small {
